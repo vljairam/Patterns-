@@ -1,0 +1,263 @@
+Patterns Problems
+*****
+*****
+*****
+*****
+*****
+Code :
+//
+import java .util.*;
+class main {
+    public static void main(String args[]){
+        Scanner s = new Scanner(System.in);
+        int num = s.nextInt();
+        for(int i=0;i<num;i++){
+            for(int j=0;j<num;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+//
+
+*
+**
+***
+****
+*****
+Code : 
+//
+import java .util.*;
+class main {
+    public static void main(String args[]){
+        Scanner s = new Scanner(System.in);
+        int num = s.nextInt();
+        for(int i=0;i<=num;i++){
+            for(int j=0;j<=i;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+}
+//
+
+1 
+1 2 
+1 2 3 
+1 2 3 4 
+Code :
+//
+import java .util.*;
+class main {
+    public static void main(String args[]){
+        Scanner s = new Scanner(System.in);
+        int num = s.nextInt();
+        for(int i=0;i<=num;i++){
+            for(int j=1;j<=i;j++){
+                System.out.print(j+" ");
+            }
+            System.out.println();
+        }
+    }
+}
+//
+
+1 
+2 2 
+3 3 3 
+4 4 4 4 
+5 5 5 5 5 
+Code : 
+//
+import java .util.*;
+class main {
+    public static void main(String args[]){
+        Scanner s = new Scanner(System.in);
+        int num = s.nextInt();
+        for(int i=1;i<=num;i++){
+            for(int j=1;j<=i;j++){
+                System.out.print(i+" ");
+            }
+            System.out.println();
+        }
+    }
+}
+//
+
+*****
+****
+***
+**
+*
+Code : 
+//
+import java .util.*;
+class main {
+    public static void main(String args[]){
+        Scanner s = new Scanner(System.in);
+        int num = s.nextInt();
+        for(int i=0;i<num;i++){
+            for(int j=num;j>i;j--){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+}
+//
+
+1 2 3 4 5 
+1 2 3 4 
+1 2 3 
+1 2 
+1 
+Code : 
+//
+import java .util.*;
+class main {
+    public static void main(String args[]){
+        Scanner s = new Scanner(System.in);
+        int num = s.nextInt();
+        for(int i=0;i<num;i++){
+            for(int j=num;j>i;j--){
+                System.out.print(num-j+1+" ");
+            }
+            System.out.println();
+        }
+    }
+}
+//
+
+      *     
+     ***     
+    *****    
+   *******   
+  ********* 
+Code : 
+//
+import java .util.*;
+class main {
+    public static void main(String args[]){
+        Scanner s = new Scanner(System.in);
+        int num = s.nextInt();
+        for(int i=0;i<num;i++){
+            for(int j=0;j<num-i+1;j++){
+                System.out.print(" ");
+            }
+            for(int j=0;j<2*i+1;j++){
+                System.out.print("*");
+            }
+            for(int j=0;j<num-i+1;j++){
+                System.out.print(" ");
+            }
+            System.out.println();
+        }
+    }
+}
+//
+
+*********
+ ******* 
+  *****  
+   ***   
+    *    
+Code : 
+//
+import java .util.*;
+class main {
+    public static void main(String args[]){
+        Scanner s = new Scanner(System.in);
+        int num = s.nextInt();
+        for(int i=0;i<num;i++){
+            for(int j=0;j<i;j++){
+                System.out.print(" ");
+            }
+            for(int j=0;j<2*num-(2*i+1);j++){
+                System.out.print("*");
+            }
+            for(int j=0;j<i;j++){
+                System.out.print(" ");
+            }
+            System.out.println();
+        }
+    }
+}
+//
+
+    *    
+   ***   
+  *****  
+ ******* 
+*********
+*********
+ ******* 
+  *****  
+   ***   
+    *  
+Code : 
+//
+import java .util.*;
+class main {
+    public static void main(String args[]){
+        Scanner s = new Scanner(System.in);
+        int num = s.nextInt();
+        for(int i=0;i<num;i++){
+            for(int j=0;j<num-i-1;j++){
+                System.out.print(" ");
+            }
+            for(int j=0;j<2*i+1;j++){
+                System.out.print("*");
+            }
+            for(int j=0;j<num-i-1;j++){
+                System.out.print(" ");
+            }
+            System.out.println();
+        }
+        for(int i=0;i<num;i++){
+            for(int j=0;j<i;j++){
+                System.out.print(" ");
+            }
+            for(int j=0;j<2*num-(2*i+1);j++){
+                System.out.print("*");
+            }
+            for(int j=0;j<i;j++){
+                System.out.print(" ");
+            }
+            System.out.println();
+        }
+    }
+}
+//
+
+*
+**
+***
+****
+*****
+****
+***
+**
+*
+Code :
+//
+import java .util.*;
+class main {
+    public static void main(String args[]){
+        Scanner s = new Scanner(System.in);
+        int num = s.nextInt();
+        for(int i=0;i<=2*num-1;i++){
+            int stars = i;
+            if(i>num) stars= 2*num-i;
+            for(int j=1;j<=stars;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+}
+//
+
+
+  
+
