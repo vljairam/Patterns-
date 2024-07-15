@@ -42,3 +42,50 @@ public class Main {
     }
 }
 //
+3.Check if a number is Palindrome or Not
+//
+import java.util.*;
+class main{
+    public static void main(String args[]){
+        Scanner s = new Scanner(System.in);
+        int num = s.nextInt();
+        int rev = 0 ;
+        int dup = num;
+        while(num>0){
+            int le = num%10;
+            rev = rev*10+le;
+            num = num/10;
+        }
+        if(dup==rev){
+            System.out.print("True");
+        }
+        else{
+        System.out.print("False");
+    }
+    }
+}
+//
+4.Find GCD of two numbers
+//
+import java.util.*;
+class main{
+    public static void main(String args[]){
+        Scanner s = new Scanner(System.in);
+        int num = s.nextInt();
+        int num1 = s.nextInt();
+        while(num>0 && num1>0){
+            if(num>num1){
+                num=num%num1;
+            }
+            else{
+                num1=num1%num;
+            }
+        }
+        if(num==0){
+        System.out.print(num1);
+    }
+    System.out.print(num);
+}
+}
+//
+
