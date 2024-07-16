@@ -31,4 +31,26 @@ class main{
     }
 }
 //
+3(1).Write a java program in a string count the vowel are be present?
+//
+import java.util.*;
+class main{
+    public static void main(String args[]){
+        Scanner s = new Scanner(System.in);
+       String str = s.nextLine();
+       char ch[] = str.toCharArray();
+       int count=0;
+       int temp ;
+       for(int i=0;i<str.length();i++){
+          temp = ch[i];
+       if(temp == 'a' || temp == 'e' || temp == 'i' || temp == 'o' || temp == 'u')
+       {
+           count++;
+       }
+       }
+       System.out.print(count);
+    }
+}
+//
+
 
