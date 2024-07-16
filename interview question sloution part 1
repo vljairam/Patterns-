@@ -52,5 +52,28 @@ class main{
     }
 }
 //
+3(2).Write a Java program to check if a vowel is present in a string?
+//
+import java.util.*;
+class main{
+    public static void main(String args[]){
+        Scanner s = new Scanner(System.in);
+       String str = s.nextLine();
+       char ch[] = str.toCharArray();
+       int temp ;
+       for(int i=0;i<str.length();i++){
+          temp = ch[i];
+       if(temp == 'a' || temp == 'e' || temp == 'i' || temp == 'o' || temp == 'u')
+       {
+           System.out.println(ch[i]+" "+" Vowels of Character");
+       }
+       else{
+           System.out.println(ch[i]+" "+" Consonants of Character");
+       }
+    }
+}
+}
+//
+
 
 
